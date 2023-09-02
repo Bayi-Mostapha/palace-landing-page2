@@ -1,12 +1,6 @@
 :root {
-    --img-height: 0;
-    --div-height: 25vh;
-    --mb-carousel-height: max(100vh, 700px);
-    --mb-hero-circle-height: max(100vh, 700px);
-    --mb-hero-height: 100%;
     --mb-hero-right-height: 45%;
     --section1-height: auto;
-    --go-down-pos: 90%;
     --s2-body-height: 52rem;
 
     --section-margin: 150px;
@@ -325,7 +319,7 @@ body {
 
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
 
     overflow: hidden;
 }
@@ -342,7 +336,7 @@ body {
 .section1 h2::before {
     content: '?';
     position: absolute;
-    top: -20px;
+    top: -10px;
     right: -0.75em;
     transform: rotate(20deg);
 
@@ -365,12 +359,12 @@ body {
 
     background-color: var(--main-color);
     background: var(--action-btn-lr);
-    border-radius: 4rem;
+    border-radius: 10px;
     color: var(--txt2);
 }
 
 .section1 .right {
-    width: 40%;
+    width: 45%;
 }
 
 .section1 .image-container {
@@ -383,17 +377,17 @@ body {
     position: relative;
 }
 
-.section1 .image-container .quest-mark {
-    height: 40%;
-    position: absolute;
-    top: -38%;
-    left: 50%;
-    transform: translateX(-50%) rotate(3deg);
-}
-
-.section1 .image-container .girl {
+.section1 .image-container .picture {
     width: 80%;
     object-fit: contain;
+}
+
+.section1 .image-container .small-picture {
+    height: 35%;
+
+    position: absolute;
+    right: 10%;
+    bottom: -10%;
 }
 
 /* ******************************************** */
