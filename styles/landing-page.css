@@ -103,10 +103,10 @@ body {
 /* ********************************* */
 
 .hero-wrapper {
-    font-size: var(--parent-default);
     width: 100vw;
     background-color: var(--main-color);
     background: var(--circle-lr);
+    font-size: var(--parent-default);
 }
 
 .lp-mobile-nav {
@@ -118,6 +118,7 @@ body {
 }
 
 .lp-navbar {
+    margin: 0 auto;
     font-size: var(--default);
     width: 90%;
     display: flex;
@@ -156,11 +157,6 @@ body {
     color: var(--txt2);
 }
 
-.active {
-    font-weight: 400;
-    border-bottom: 2px solid var(--txt2);
-}
-
 .btns {
     display: flex;
     align-items: center;
@@ -168,15 +164,16 @@ body {
 }
 
 .mb-login {
-    padding: .5rem 1rem;
+    padding: .3rem 1rem;
 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: .5rem;
 
-    border-radius: .5rem;
     border: 2px solid var(--txt2);
+    border-radius: 9px;
+
     color: var(--txt2);
 
     font-weight: 400;
@@ -184,28 +181,22 @@ body {
     text-transform: capitalize;
 }
 
-.mb-rq i {
-    font-size: var(--default);
-}
-
 .mb-rq {
-    padding: 0 1.5em;
-
-    height: 2.5em;
+    padding: .3rem 1rem;
 
     background-color: var(--txt2);
+    border-radius: 9px;
+
     color: var(--main-color);
 
-    border-radius: 2rem;
-    font-weight: 600;
-    font-size: var(--small);
-    text-transform: capitalize;
+    font-weight: 700;
+    font-size: var(--default);
 }
 
 .hero {
     margin: 3rem auto 0 auto;
     width: 90%;
-    height: var(--mb-hero-height);
+
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -270,14 +261,14 @@ body {
     font-size: var(--default);
     margin-top: 1rem;
     width: fit-content;
-    padding: 1.5em;
+    padding: .5rem 1rem;
 
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 
     border: 1px solid var(--txt2);
-    border-radius: 2rem;
+    border-radius: 9px;
 }
 
 .hero .stars {
@@ -955,11 +946,6 @@ body {
     .lp-mobile-navlinks .navlink {
         color: var(--main-color);
         margin: 10% 0;
-    }
-
-    .active {
-        font-weight: 500;
-        border-bottom: 2px solid var(--main-color);
     }
 
     .lp-mobile-nav .btns {

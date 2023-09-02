@@ -4,13 +4,13 @@
     --txt: black;
     --txt2: white;
     --gray-txt: rgb(162, 171, 186);
-    --main-color: rgb(79, 12, 189);
-    --main-color-shadow: rgba(74, 143, 255, 0.15);
+    --main-color: rgb(43, 68, 250);
+    --main-color-shadow: rgba(43, 68, 250, 0.15);
     --light-gray: rgb(236, 237, 248);
     --yellow: rgb(245, 206, 5);
 
-    --circle-lr: linear-gradient(90deg, var(--main-color) 37%, rgb(95, 9, 250) 100%);
-    --action-btn-lr: linear-gradient(180deg, var(--main-color) 0%, rgb(95, 9, 250) 100%);
+    --circle-lr: linear-gradient(90deg, rgb(17, 13, 161) 37%, var(--main-color) 100%);
+    --action-btn-lr: linear-gradient(180deg, rgb(17, 13, 161) 0%, var(--main-color) 100%);
 
     --parent-default: 1rem;
     --x-small: .7em;
