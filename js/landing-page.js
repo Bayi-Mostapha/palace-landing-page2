@@ -50,14 +50,11 @@ window.onload = function () {
         const section1_right = document.querySelector('.section1 .right .picture').offsetHeight;
         const small_pic = document.querySelector('.section1 .right .small-picture').offsetHeight;
         const h2Element = document.querySelector('.section1 h2');
-        const computedStyle = getComputedStyle(h2Element, '::before');
-        const quest_mark2 = parseFloat(computedStyle.height);
 
         if (window.innerWidth > 900) {
             root.style.setProperty('--section1-height', `${Math.max(section1_left, section1_right) + small_pic / 4}px`);
         } else {
-            root.style.setProperty('--section1-height', `${section1_left + section1_right + small_pic + quest_mark2}px`);
-            root.style.setProperty('--ssection-margin', `${small_pic + 150}px`);
+            root.style.setProperty('--section1-height', `${section1_left + section1_right + small_pic + 150}px`);
         }
     }
 
