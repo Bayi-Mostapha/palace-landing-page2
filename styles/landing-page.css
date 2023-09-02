@@ -5,9 +5,6 @@
 
     --section-margin: 150px;
     --ssection-margin: 150px;
-
-    --s2-right: 5%;
-    --s2-left: 5%;
 }
 
 html {
@@ -325,6 +322,7 @@ body {
 }
 
 .section1 .left {
+    margin-top: 30px;
     line-height: var(--xx-big);
     width: 45%;
     display: flex;
@@ -392,14 +390,15 @@ body {
 
 /* ******************************************** */
 .section2 {
-    font-size: var(--parent-default);
-
+    margin-top: var(--section-margin);
     overflow: hidden;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: .9rem;
+
+    font-size: var(--parent-default);
 }
 
 .section2 .header {
@@ -415,142 +414,62 @@ body {
 .section2 .header p {
     margin-top: 1rem;
     font-size: var(--big);
-    line-height: 2.5rem;
     text-align: center;
 }
 
 .section2 .body {
     width: 100%;
-    min-height: var(--s2-body-height);
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.section2 .body .left {
-    margin-right: var(--s2-left);
-    display: flex;
-    justify-self: flex-start;
-    align-self: flex-start;
-    width: 46%;
-    height: 50rem;
-
-    position: relative;
-}
-
-.s2-circle {
-    width: 50rem;
-    height: 50rem;
-
-    position: absolute;
-    top: 0;
-    left: -25rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 50%;
-    background-color: var(--main-color);
-    background: var(--circle-lr);
-}
-
-.section2 .left .image-container {
-    margin-left: var(--s2-left);
-    width: 100%;
-    height: 70%;
-    transform: translateX(30%);
-}
-
-.section2 img {
-    height: 100%;
-    object-fit: contain;
-    border-radius: 30px;
-}
-
-.section2 .right {
-    margin-right: var(--s2-right);
-    width: 45%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 2rem;
 }
 
-.features {
-    width: 100%;
+.section2 .group {
+    padding: 2rem 1.5rem;
+    width: 90%;
+
+    display: flex;
+    gap: 5%;
+
+    background-color: rgb(227, 235, 255);
+    border-radius: 15px;
+}
+
+.section2 .group .description {
+    width: 45%;
+    font-size: var(--big);
+}
+
+.section2 .group .description h2 {
+    text-transform: capitalize;
+    font-size: var(--big);
+}
+
+
+.section2 .group .features {
+    width: 50%;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 20px;
 }
 
-.feature,
-.feature2 {
-    white-space: nowrap;
-    padding: 0 .5rem 0 3.1rem;
+.section2 .group .feature {
+    padding: 1rem;
+
+    background-color: var(--txt2);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 8px;
+
+    font-size: var(--big);
     text-align: center;
-    height: 3rem;
-
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 2rem;
-    border: 2px solid var(--main-color);
-    color: var(--txt2);
-    text-transform: capitalize;
 }
 
-.feature2 {
+.section2 .group .feature.blue {
     background-color: var(--main-color);
-}
-
-.feature p,
-.feature2 p {
-    font-size: var(--big);
-    font-weight: 500;
-    color: var(--main-color);
-}
-
-.feature2 p {
     color: var(--txt2);
-}
-
-.n {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-
-    position: absolute;
-    top: -2px;
-    left: -2px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--txt);
-    color: var(--txt2);
-    border: 2px solid var(--txt);
-    font-size: var(--big);
-    font-weight: bold;
-}
-
-.s2-action {
-    margin-top: 25px;
-    padding: 10px 25px;
-    border-radius: 4rem;
-
-    font-size: var(--big);
-    background-color: var(--main-color);
-    background: var(--action-btn-lr);
-    color: var(--txt2);
-    text-transform: capitalize;
-    font-weight: 400;
 }
 
 /* ******************************************** */
