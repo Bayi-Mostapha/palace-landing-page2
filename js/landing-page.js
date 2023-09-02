@@ -59,26 +59,6 @@ window.onload = function () {
             root.style.setProperty('--section1-height', `${section1_left + section1_right + small_pic + quest_mark2}px`);
             root.style.setProperty('--ssection-margin', `${small_pic + 150}px`);
         }
-
-        // const section2_right = document.querySelector('.section2 .body .right').offsetHeight;
-        // if (window.innerWidth > 900) {
-        //     root.style.setProperty('--s2-body-height', 52 + 'rem');
-        // } else {
-        //     root.style.setProperty('--s2-body-height', `calc(${section2_right}px + 55rem)`);
-        // }
-
-        // const s2_right = document.querySelector('.section2 .body .right');
-        // const s2_left = document.querySelector('.section2 .body .left');
-
-        // if (window.innerWidth > 900) {
-        //     const available_space = window.innerWidth - (s2_right.offsetWidth + s2_left.offsetWidth);
-
-        //     root.style.setProperty('--s2-left', `${available_space / 2}px`);
-        //     root.style.setProperty('--s2-right', `${available_space / 2}px`);
-        // } else {
-        //     root.style.setProperty('--s2-left', 'auto');
-        //     root.style.setProperty('--s2-right', 'auto');
-        // }
     }
 
     updateHeights();
