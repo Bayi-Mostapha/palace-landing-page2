@@ -736,8 +736,9 @@ footer .mini-title {
     transform: translateX(25%);
 }
 
-.rotate-from-top {
-    transform: rotate(-45deg);
+.pop {
+    opacity: 0;
+    transform: scale(0.75);
 }
 
 .fade-in {
