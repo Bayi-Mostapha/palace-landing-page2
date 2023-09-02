@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --txt: black;
+    --txt2: white;
+    --gray-txt: rgb(162, 171, 186);
+    --main-color: rgb(79, 12, 189);
+    --main-color-shadow: rgba(74, 143, 255, 0.15);
+    --light-gray: rgb(236, 237, 248);
+    --yellow: rgb(245, 206, 5);
+
+    --circle-lr: linear-gradient(90deg, var(--main-color) 37%, rgb(95, 9, 250) 100%);
+    --action-btn-lr: linear-gradient(180deg, var(--main-color) 0%, rgb(95, 9, 250) 100%);
+
+    --parent-default: 1rem;
+    --x-small: .7em;
+    --small: .85em;
+    --default: 1em;
+    --default-big: 1.2em;
+    --big: 1.5em;
+    --x-big: 2em;
+    --xx-big: 2.5em;
+
+    /* shadows */
+    --light-border: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    --bold-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    --normal-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    --light-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+html {
+    font-size: 15px;
+}
+
+/* ************************************************* */
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea,
+button,
+select {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+:focus {
+    outline: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* ********************************************************************* */
+/* scroll bar  */
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+/* ********************************************************************** */
+
+.mb-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mb-btn:hover {
+    opacity: 0.9;
+}
+
+.mb-btn:active {
+    opacity: 0.85;
+}
+
+.image-container1 {
+    background-color: var(--light-gray);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image-container1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-container2 {
+    border-radius: 5px;
+    height: 45px;
+    width: 45px;
+    overflow: hidden;
+    background-color: var(--light-gray);
+}
+
+.image-container2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+i {
+    font-size: 1rem;
+    transition: all 300ms;
+}
+
+/* ==== form styles ==== */
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+label {
+    text-transform: capitalize;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    text-indent: 5px;
+    font-size: var(--default);
+
+    color: var(--txt);
+    background-color: var(--main-bg);
+    border: 1px solid var(--light-gray);
+    border-radius: 3px;
+}
+
+input::placeholder {
+    font-size: var(--default);
+    color: var(--gray-txt);
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    text-indent: 5px;
+
+    color: var(--txt);
+    background-color: var(--main-bg);
+    border: 1px solid var(--light-gray);
+    border-radius: 3px;
+    resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: var(--main-color);
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    text-indent: 5px;
+    font-size: var(--default);
+
+    color: var(--txt);
+    background-color: var(--main-bg);
+    border: 1px solid var(--light-gray);
+    border-radius: 3px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: var(--main-color);
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: fit-content;
+}
