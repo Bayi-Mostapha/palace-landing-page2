@@ -12,54 +12,6 @@ body {
     width: 100vw;
 }
 
-.line-nowrap {
-    width: 100%;
-    white-space: nowrap;
-    display: block;
-}
-
-/* ************************************* */
-
-.loader {
-    background-color: white;
-    height: 100dvh;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.loader .circle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-
-    border-top: 4px solid var(--main-color);
-    border-right: 4px solid var(--main-color);
-    border-bottom: 4px solid var(--main-color);
-    border-left: 4px solid white;
-
-    animation: spin 1s linear infinite;
-}
-
-.hide-overflow {
-    overflow: hidden !important;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 /* ****************************** */
 
 .mb-title {
@@ -961,32 +913,19 @@ footer .mini-title {
 
     .lp-mobile-nav .btns {
         flex-direction: column;
-        align-items: stretch;
     }
 
-    .lp-mobile-nav .mb-login {
-        padding: 0 0 0 40%;
+    .mb-login {
+        gap: 1rem;
         border: 2px solid var(--main-color);
         color: var(--main-color);
-        font-size: var(--big);
     }
 
-    .lp-mobile-nav .icon {
-        border: 2px solid var(--main-color);
-        top: -2px;
-        left: -2px;
-    }
-
-    .lp-mobile-nav .icon i {
-        color: var(--main-color);
-    }
-
-    .lp-mobile-nav .mb-rq {
-        font-size: var(--big);
-        color: var(--txt2);
+    .mb-rq {
         background-color: var(--main-color);
-        background: var(--circle-lr);
+        color: var(--txt2);
     }
+
 
     .mb-bar {
         width: 100%;
@@ -1034,6 +973,10 @@ footer .mini-title {
     .line-nowrap {
         display: inline;
         white-space: normal;
+    }
+
+    * {
+        white-space: normal !important;
     }
 
     .hero .left,
