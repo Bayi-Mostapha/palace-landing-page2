@@ -15,3 +15,89 @@
 .stitle2::after {
     width: 50%;
 }
+
+.section1 {
+    margin-top: var(--section-margin);
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.section1 .mb-title {
+    margin-bottom: 1.5rem;
+}
+
+.section1 .left {
+    width: 50%;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.section1 .left p {
+    font-size: var(--big);
+}
+
+.action {
+    margin-top: 1.5rem;
+    padding: .8rem 1.2rem;
+
+    background-color: var(--main-color);
+    background: var(--action-btn-lr);
+    color: white;
+    border-radius: 14px;
+
+    font-weight: 700;
+    font-size: var(--big);
+    text-transform: capitalize;
+}
+
+.section1 .right {
+    width: 40%;
+}
+
+.section1 .right img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* ***************************** */
+
+.section2 {
+    margin-top: var(--section-margin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2 p {
+    margin-top: 2rem;
+    width: 80%;
+}
+
+/* ****************************** */
+
+.section3 {
+    margin-top: var(--section-margin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s3-social-links {
+    margin-top: 1.5rem;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.s3-social-links a i {
+    color: var(--main-color);
+    font-size: var(--x-big);
+}

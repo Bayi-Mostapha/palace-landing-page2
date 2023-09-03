@@ -2,8 +2,6 @@
     --mb-hero-right-height: 45%;
     --section1-height: auto;
     --s2-body-height: 52rem;
-
-    --section-margin: 150px;
 }
 
 body {
@@ -176,7 +174,6 @@ body {
 /* ******************************************** */
 
 .section1 {
-    /* margin-top: var(--section-margin); */
     height: var(--section1-height);
     font-size: var(--parent-default);
 
