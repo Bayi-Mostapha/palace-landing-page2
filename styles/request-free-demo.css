@@ -1,3 +1,7 @@
+.lp-navbar{
+    width: 100%;
+    background-color: var(--main-color);
+}
 section {
     width: 100%;
 
