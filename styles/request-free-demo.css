@@ -1,8 +1,17 @@
-.lp-navbar{
+:root {
+    --top-height: 25rem;
+}
+
+.lp-navbar {
+    padding: 0 .5rem;
     width: 100%;
     background-color: var(--main-color);
+    background: linear-gradient(90deg, rgba(31, 44, 211, 1) 50%, rgba(17, 12, 159, 1) 100%);
 }
-section {
+
+.main {
+    margin-top: 7rem;
+
     width: 100%;
 
     display: flex;
@@ -11,8 +20,146 @@ section {
     gap: 3rem;
 }
 
-section .top {
+.mb-title {
+    margin-bottom: 5rem;
+}
+
+.mb-title::after {
+    width: 70%;
+}
+
+.main .top {
     width: 90%;
 
     display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.main .top .left {
+    width: 25rem;
+}
+
+.main .top form {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.main .top form input {
+    padding: 1.3rem;
+    background-color: rgb(219, 229, 255);
+    border: none;
+    border-radius: 14px;
+}
+
+.main .top form input::placeholder {
+    color: rgb(118, 119, 125);
+    font-size: var(--default);
+}
+
+.main .top form .long-input::placeholder {
+    font-size: var(--small);
+}
+
+.srow {
+    display: flex;
+    gap: .8rem;
+}
+
+form .submit {
+    padding: .7rem;
+
+    background: var(--main-color);
+    background: var(--action-btn-lr);
+    color: var(--txt2);
+    border-radius: 15px;
+
+    font-size: var(--big);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.main .top .right {
+    width: 40%;
+    position: relative;
+}
+
+.main .top .right .floating-img1 {
+    width: 20rem;
+
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main .top .right .floating-img2 {
+    width: 20rem;
+
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+.main .bottom {
+    width: 80%;
+    margin: 7rem 0;
+}
+
+.main .bottom p {
+    font-size: var(--big);
+}
+
+@media(max-width:650px) {
+
+    .main .top {
+        flex-direction: column-reverse;
+    }
+
+    .main .top .left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main .top .right {
+        min-height: var(--top-height);
+        width: 80%;
+    }
+
+    .main .top .right .floating-img1 {
+        top: 0;
+        left: 45%;
+    }
+
+    .main .top .right .floating-img2 {
+        top: 0;
+        left: 80%;
+    }
+}
+
+@media (max-width:500px) {
+    .main .bottom {
+        width: 90%;
+    }
+}
+
+@media (max-width:300px) {
+    .mb-title {
+        white-space: normal;
+    }
+
+    .main .top form {
+        width: 95%;
+    }
+
+    .main .top .right .floating-img1,
+    .main .top .right .floating-img2 {
+        width: 15rem;
+    }
 }

@@ -12,32 +12,6 @@ body {
     width: 100vw;
 }
 
-/* ****************************** */
-
-.mb-title {
-    padding: 0 0 10px 0;
-
-    font-size: var(--xx-big);
-    width: fit-content;
-    position: relative;
-    text-transform: capitalize;
-    font-weight: 800 !important;
-    white-space: nowrap;
-}
-
-.mb-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-    background-color: var(--main-color);
-    width: 90%;
-    height: .5rem;
-    border-radius: 1rem;
-}
-
 /* ********************************* */
 
 .hero-wrapper {
