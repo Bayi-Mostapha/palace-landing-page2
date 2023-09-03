@@ -1,0 +1,17 @@
+.lp-navbar {
+    padding: 0 .5rem;
+    width: 100%;
+    background-color: var(--main-color);
+    background: linear-gradient(90deg, rgba(31, 44, 211, 1) 50%, rgba(17, 12, 159, 1) 100%);
+}
+
+.stitle::after {
+    bottom: 0;
+    left: 75%;
+    transform: translateX(-50%);
+    width: 40%;
+}
+
+.stitle2::after {
+    width: 50%;
+}

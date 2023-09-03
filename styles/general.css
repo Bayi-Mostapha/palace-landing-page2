@@ -11,7 +11,7 @@
     --light-gray: rgb(236, 237, 248);
     --yellow: rgb(245, 206, 5);
 
-    --circle-lr: linear-gradient(90deg, var(--main-color2) 37%, var(--main-color) 100%);
+    --circle-lr: linear-gradient(90deg, var(--main-color2) 49%, var(--main-color) 100%);
     --action-btn-lr: linear-gradient(180deg, var(--main-color2) 0%, var(--main-color) 100%);
 
     --parent-default: 1rem;
@@ -379,12 +379,29 @@ input[type="radio"] {
     font-size: var(--default);
 }
 
+/* ************************************* */
+
+.vector {
+    width: 100%;
+}
+
+.vector img {
+    width: 100%;
+}
+
+.vector1 {
+    margin-top: -6px;
+}
+
+.vector2 {
+    margin-bottom: -6px;
+}
 
 /* ************************************* */
 
 footer {
-    padding: 1rem 0;
-    margin-top: var(--section-margin);
+    padding: 1.5rem 0;
+    /* margin-top: var(--section-margin); */
 
     display: flex;
     flex-direction: column;

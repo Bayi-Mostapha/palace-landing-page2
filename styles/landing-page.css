@@ -15,6 +15,7 @@ body {
 /* ********************************* */
 
 .hero-wrapper {
+    padding: 1rem 0;
     width: 100vw;
     background-color: var(--main-color);
     background: var(--circle-lr);
@@ -175,7 +176,7 @@ body {
 /* ******************************************** */
 
 .section1 {
-    margin-top: var(--section-margin);
+    /* margin-top: var(--section-margin); */
     height: var(--section1-height);
     font-size: var(--parent-default);
 
