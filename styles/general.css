@@ -7,6 +7,7 @@
     --main-color: rgb(43, 68, 250);
     --main-color2: rgb(17, 13, 161);
     --main-color-shadow: rgba(43, 68, 250, 0.15);
+    --main-bg: white;
     --light-gray: rgb(236, 237, 248);
     --yellow: rgb(245, 206, 5);
 
@@ -212,11 +213,4 @@ input[type="date"] {
 input[type="checkbox"],
 input[type="radio"] {
     accent-color: var(--main-color);
-}
-
-.input {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: fit-content;
 }

@@ -1,0 +1,96 @@
+:root {
+    --light-blue: rgb(44, 71, 248);
+    --lighter-blue: rgb(104, 116, 222);
+}
+
+body {
+    width: 100vw;
+    min-height: 100dvh;
+    background: rgb(31, 44, 211);
+    background: linear-gradient(0deg, rgba(31, 44, 211, 1) 0%, rgba(17, 12, 159, 1) 100%);
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100dvh;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.icon {
+    padding: .5rem .6rem;
+
+    color: var(--main-color);
+    background-color: white;
+    border-radius: 50%;
+
+    font-size: var(--big);
+}
+
+.header p {
+    color: var(--txt2);
+    text-transform: capitalize;
+    font-size: var(--x-big);
+    font-weight: 800;
+}
+
+form {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+form .input {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+form .submit {
+    padding: 7px;
+
+    background: var(--light-blue);
+    background: linear-gradient(0deg, var(--light-blue) 0%, var(--lighter-blue) 100%);
+    color: var(--txt2);
+    border-radius: 15px;
+
+    font-size: var(--big);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.logo {
+    width: 15rem;
+}
+
+.logo img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.copy-right {
+    position: absolute;
+    bottom: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: white;
+
+    font-size: var(--small);
+}
