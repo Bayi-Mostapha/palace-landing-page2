@@ -14,6 +14,7 @@
     --yellow: rgb(245, 206, 5);
 
     --circle-lr: linear-gradient(90deg, var(--main-color2) 49%, var(--main-color) 100%);
+    --footer-lr: linear-gradient(270deg, var(--main-color2) 49%, var(--main-color) 100%);
     --action-btn-lr: linear-gradient(180deg, var(--main-color2) 0%, var(--main-color) 100%);
 
     --parent-default: 1rem;
@@ -370,7 +371,7 @@ input[type="radio"] {
 }
 
 .mb-rq {
-    padding: .3rem 1rem;
+    padding: calc(.3rem + 2px) 1rem;
 
     background-color: var(--txt2);
     border-radius: 9px;
@@ -409,7 +410,7 @@ footer {
     align-items: center;
 
     background-color: var(--main-color);
-    background: var(--circle-lr);
+    background: var(--footer-lr);
 }
 
 footer .flogo img {
