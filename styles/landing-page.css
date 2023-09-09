@@ -632,6 +632,15 @@ body {
     .section3 .top .right {
         width: 100%;
     }
+    .section4 .partners .row1,
+    .section4 .partners .row2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .row2 .partner:last-child {
+        grid-column: span 2;
+    }
 }
 
 @media (max-width:900px) {
@@ -707,16 +716,6 @@ body {
     .hero .right {
         width: 90%;
     }
-
-    .section4 .partners .row1,
-    .section4 .partners .row2 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .row2 .partner:last-child {
-        grid-column: span 2;
-    }
 }
 
 @media (max-width:500px) {
@@ -737,6 +736,14 @@ body {
     .section2 .header p {
         width: 100%;
     }
+    .section4 .partners .row1,
+    .section4 .partners .row2 {
+        grid-template-columns: 1fr;
+    }
+
+    .row2 .partner:last-child {
+        grid-column: span 1;
+    }
 }
 
 @media (max-width:425px) {
@@ -750,6 +757,10 @@ body {
 }
 
 @media (max-width:325px) {
+    .hbtns {
+        flex-direction: column;
+        gap: 1em;
+    }
 
     .section1 h2::before {
         top: -10px;
@@ -757,22 +768,9 @@ body {
         transform: rotate(15deg);
         font-weight: 600;
     }
-
-    .section4 .partners .row1,
-    .section4 .partners .row2 {
-        grid-template-columns: 1fr;
-    }
-
-    .row2 .partner:last-child {
-        grid-column: span 1;
-    }
 }
 
 @media (max-width:300px) {
-    .hbtns {
-        flex-direction: column;
-        gap: 1em;
-    }
 
     .section5 form {
         width: 90%;
