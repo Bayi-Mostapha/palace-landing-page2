@@ -1,7 +1,7 @@
 .nav-wrapper {
     padding-bottom: 3rem;
     width: 100%;
-    border-radius: 0 0 4.5rem 4.5rem;
+    border-radius: 0 0 100px 100px;
 
     background-color: var(--main-color);
     background: var(--circle-lr);
@@ -28,24 +28,49 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .pack {
-    border-radius: 1rem;
-    padding: 1rem;
+    border-radius: 15px;
+    padding: 2rem 1.5rem;
     box-shadow: var(--normal-shadow);
+}
+
+.pack2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.pack2 .badge {
+    padding: 5px 100px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(45deg);
+
+    color: var(--txt2);
+    background-color: var(--main-color);
+
+    font-size: var(--default);
+    font-weight: 700;
 }
 
 .pack3 {
     grid-column: span 2;
 
     display: flex;
-    gap: 2%;
+    gap: 5%;
 }
 
-.pack3 .content {
-    width: 50%;
+.pack3 .content:first-child {
+    width: 60%;
+}
+
+.pack3 .content:nth-child(2) {
+    padding-top: var(--c2);
+    width: 35%;
 }
 
 .pack3 .features {
@@ -79,23 +104,28 @@
 }
 
 .pack-mini-desc {
+    margin-top: .5rem;
+    margin-bottom: 2rem;
     width: var(--mini-desc);
-    font-size: var(--small);
+    font-size: .75rem;
 }
-
 
 .feature {
     width: fit-content;
-    margin: .5rem 0;
+    margin: .7rem 0;
+
+    font-size: var(--default);
 }
 
 .check-mark {
-    padding: 5px 6px;
+    margin-right: .5rem;
+    padding: 4px 5px;
     border-radius: 50%;
 
     color: var(--txt2);
     background-color: var(--main-color);
-    font-size: var(--small);
+
+    font-size: .7rem;
 }
 
 .action {
@@ -112,3 +142,10 @@
     font-weight: bold;
     text-align: center;
 }
+
+.pack-large-desc {
+    margin-bottom: 1rem;
+    font-size: var(--small);
+}
+
+/* @media (max-width:650px) {} */
