@@ -43,14 +43,12 @@
 }
 
 .pack2 .badge {
-    display: none;
-
-    width: 100%;
+    width: 50%;
     padding: .3em;
 
     position: absolute;
-    top: 0;
-    left: 0;
+    top: var(--badge-top);
+    right: var(--badge-right);
     transform: rotate(45deg);
 
     color: var(--txt2);
@@ -80,6 +78,10 @@
 .pack3 .features {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.pack .features {
+    margin-bottom: 1rem;
 }
 
 .pack-title {
@@ -158,9 +160,14 @@
     font-size: var(--big);
 }
 
-@media (max-width:650px) {
+@media (max-width:760px) {
     .packs {
         grid-template-columns: 1fr;
+    }
+
+    .pack .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .pack3 {
@@ -176,12 +183,6 @@
     .pack3 .content:nth-child(2) {
         width: 100%;
         padding: 0;
-    }
-
-    .pack3 .features {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 0;
     }
 
     .pack-mini-desc {
@@ -206,9 +207,14 @@
     .pack-title {
         white-space: normal;
     }
+
+    .pack .features {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
-@media (max-width:212px) {
+@media (max-width:251px) {
     .pack-title::after {
         left: 50%;
         transform: translate(-50%);

@@ -1,4 +1,4 @@
-// ********************************************* Hero height
+// ********************************************
 function updateHeights() {
     const section = document.querySelector('.main .top .right').offsetHeight;
     const img1 = document.querySelector('.main .top .right .floating-img1').offsetHeight;
