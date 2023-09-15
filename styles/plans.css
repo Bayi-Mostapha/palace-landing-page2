@@ -110,17 +110,17 @@
 }
 
 .pack-mini-desc {
-    margin-top: .5rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     width: var(--mini-desc);
-    font-size: .75rem;
+    font-size: var(--default);
 }
 
 .feature {
     width: fit-content;
     margin: .7rem 0;
 
-    font-size: var(--default);
+    font-size: var(--big);
 }
 
 .check-mark {
@@ -137,7 +137,7 @@
 .action {
     width: 100%;
     padding: .5em 1em;
-    border-radius: 11px;
+    border-radius: 9px;
 
     color: var(--txt2);
     background-color: var(--main-color);
@@ -151,12 +151,12 @@
 
 .pack-large-desc {
     margin-bottom: 1rem;
-    font-size: var(--small);
+    font-size: var(--default);
 }
 
 .terms {
     width: 90%;
-    margin: 2rem auto 0 auto;
+    margin: 4rem auto 0 auto;
     font-size: var(--big);
 }
 
@@ -187,19 +187,10 @@
 
     .pack-mini-desc {
         width: 100%;
-        font-size: var(--default);
-    }
-
-    .pack-large-desc {
-        font-size: var(--default);
     }
 }
 
-@media (max-width:350px) {
-    .nav-wrapper {
-        border-radius: 0;
-    }
-
+@media (max-width:520px) {
     .mb-title {
         white-space: normal;
     }
@@ -211,6 +202,12 @@
     .pack .features {
         display: grid;
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:340px) {
+    .nav-wrapper {
+        border-radius: 0;
     }
 }
 

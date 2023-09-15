@@ -5,13 +5,8 @@ function updates() {
 
     const badge = document.querySelector('.badge').offsetWidth;
 
-    if (window.innerWidth > 760) {
-        root.style.setProperty('--badge-top', `${badge / 6}px`);
-        root.style.setProperty('--badge-right', `${badge / -4}px`);
-    } else {
-        root.style.setProperty('--badge-top', `${badge / 8}px`);
-        root.style.setProperty('--badge-right', `${badge / -3}px`);
-    }
+    root.style.setProperty('--badge-top', `${badge / 6}px`);
+    root.style.setProperty('--badge-right', `${badge / -4}px`);
 
     const e1 = document.querySelector('.pack3 .pack-title').offsetHeight;
     const e2 = document.querySelector('.pack3 .pack-mini-desc').offsetHeight;
