@@ -28,13 +28,13 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .pack {
     border-radius: 15px;
     padding: 2rem 1.5rem;
-    box-shadow: var(--normal-shadow);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 .pack2 {
