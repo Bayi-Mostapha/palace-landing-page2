@@ -2,7 +2,8 @@ const root = document.documentElement;
 const loader = document.querySelector('.loader');
 
 window.onload = function () {
-    loader.style.display = 'none';
+    if (loader)
+        loader.style.display = 'none';
     document.body.classList.remove('hide-overflow');
 
     // ****************************** Intersection observer
