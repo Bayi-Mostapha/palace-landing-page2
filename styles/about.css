@@ -17,11 +17,12 @@
 }
 
 .section1 {
+    width: 90%;
+    margin: 0 auto;
     margin-top: var(--section-margin);
 
     display: flex;
     justify-content: center;
-    gap: 1rem;
 }
 
 .section1 .left {
@@ -57,7 +58,7 @@
 
 .circle-icon {
     margin-right: 1rem;
-    padding: .4rem .7rem;
+    padding: .4rem .65rem;
 
     color: var(--main-color);
     background-color: var(--txt2);
@@ -66,7 +67,7 @@
 }
 
 .section1 .right {
-    width: 40%;
+    width: 50%;
 }
 
 .section1 .right img {
@@ -94,7 +95,7 @@
 /* ****************************** */
 
 .section3 {
-    margin-top: var(--section-margin);
+    margin: var(--section-margin) 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,4 +114,32 @@
 .s3-social-links a i {
     color: var(--main-color);
     font-size: var(--x-big);
+}
+
+@media (max-width:1000px) {
+    .section1 {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .section1 .left {
+        width: 100%;
+    }
+
+    .section1 .right {
+        width: 100%;
+        margin-top: var(--section-margin);
+    }
+}
+
+@media (max-width:300px) {
+    .mb-title {
+        white-space: normal;
+    }
+
+    .mb-title::after {
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
