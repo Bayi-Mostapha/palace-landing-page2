@@ -70,4 +70,16 @@ window.onload = function () {
             });
         }
     });
+
+    document.querySelectorAll('.mb-login').forEach(btn => {
+        btn.addEventListener('click', () => {
+            window.location.href = 'login.html';
+        });
+    })
+
+    document.querySelectorAll('.mb-rq').forEach(btn => {
+        btn.addEventListener('click', () => {
+            window.location.href = 'request-free-demo.html';
+        });
+    });
 };
